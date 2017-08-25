@@ -3,7 +3,7 @@ Maak een fork van deze repo en zet een webapplicatie op met een multiple-select-
 
 ## Gegeven:
 * JSON file met inhoud voor multi-select (470 items)
-* Design van multi-select (gebaseerd op design van my-assortment filter productgroep select)
+* Design van multi-select
 * Svg van zoek-icon
 
 ## Requirements:
@@ -30,4 +30,4 @@ Maak een fork van deze repo en zet een webapplicatie op met een multiple-select-
 * Het is toegestaan om een (eigen) basisarchitectuur / scaffold te gebruiken, mits je uit kan leggen waarom
 * Liefst zoveel mogelijk ES6 (of Typescript)
 * Gebruik gestructureerde code (common practices/coding patterns)
-* Het product hoeft niet af te zijn, als het maar voldoende inzicht geeft in het technisch niveau. Daarbij helpt het uiteraard wel als - een deel van de code functioneert
+* Het product hoeft niet af te zijn, als het maar voldoende inzicht geeft in het technisch niveau. Daarbij helpt het uiteraard wel als een deel van de code functioneert
