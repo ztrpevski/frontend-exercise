@@ -1,5 +1,5 @@
 ## Opdracht: 
-Maak een fork van deze repo en zet een webapplicatie op met een multiple-select-filter. Zie details hieronder. We willen zien hoe je een webapplicatie opzet en of je weloverwogen architecturele keuzes kan maken. Normaal werk je in een bestaande architectuur / framework, maar dat hebben we bewust losgelaten om je vrijheid te geven en je technische diepgang beter te kunnen beoordelen.
+Maak een fork van deze repo en zet een webapplicatie op met een multiple-select-filter. Zie details hieronder. We willen zien hoe je een webapplicatie opzet en of je weloverwogen technische beslissingen kan maken. 
 
 ## Gegeven:
 * JSON file met inhoud voor multi-select (470 items)
@@ -26,8 +26,6 @@ Maak een fork van deze repo en zet een webapplicatie op met een multiple-select-
 * Opzetten build street (npm/gulp/webpack/?)
 
 ## Requirements:
-* Gebruik geen frameworks / libraries (ook geen jQuery). Microlibraries zijn wel toegestaan, mits je uit kan leggen waarom
-* Het is toegestaan om een (eigen) basisarchitectuur / scaffold te gebruiken, mits je uit kan leggen waarom
-* Liefst zoveel mogelijk ES6 (of Typescript)
 * Gebruik gestructureerde code (common practices/coding patterns)
 * Het product hoeft niet af te zijn, als het maar voldoende inzicht geeft in het technisch niveau. Daarbij helpt het uiteraard wel als een deel van de code functioneert
+* Liefst zoveel mogelijk Typescript of ES6 (pré)
