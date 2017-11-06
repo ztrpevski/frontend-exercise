@@ -26,7 +26,7 @@ Create a fork of this repo and setup a webapp wich a multiple-select-filter. See
 * Data storage
 * Build street setup (npm/gulp/webpack/?)
 
-## Make sure that:
+## Takeaways:
 * You write well structured code (use common practices / coding patterns)
 * It ok if you do not finish the project. Our goal is to get an insight of your skills. Though it helps if (part of) the code works ;)
 * It's a plus if you use Typescript of ES6
