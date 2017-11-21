@@ -1,6 +1,6 @@
 
 ## Assignment: 
-Create a fork of this repo and setup a webapp wich a multiple-select-filter. See details below. Our goal is to get an idea of how you setup a webapp and overcome technical challenges.
+Create a clone of this repo and setup a webapp wich a multiple-select-filter. See details below. Our goal is to get an idea of how you setup a webapp and overcome technical challenges.
 
 ## Given assets:
 * JSON file with data entries for the multi-select (470 items)
