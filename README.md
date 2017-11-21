@@ -1,5 +1,5 @@
 ## Opdracht: 
-Maak een fork van deze repo en zet een webapplicatie op met een multiple-select-filter. Zie details hieronder. We willen zien hoe je een webapplicatie opzet en of je weloverwogen technische beslissingen kan maken. 
+Maak een clone van deze repo en zet een webapplicatie op met een multiple-select-filter. Zie details hieronder. We willen zien hoe je een webapplicatie opzet en of je weloverwogen technische beslissingen kan maken. 
 
 ## Gegeven:
 * JSON file met inhoud voor multi-select (470 items)
