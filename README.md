@@ -29,3 +29,4 @@ Maak een clone van deze repo en zet een webapplicatie op met een multiple-select
 * Gebruik gestructureerde code (common practices/coding patterns)
 * Het product hoeft niet af te zijn, als het maar voldoende inzicht geeft in het technisch niveau. Daarbij helpt het uiteraard wel als een deel van de code functioneert
 * Liefst zoveel mogelijk Typescript of ES6 (pré)
+* Werken met TDD of BDD is een pré
