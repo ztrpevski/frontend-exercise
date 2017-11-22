@@ -15,8 +15,7 @@ Create a clone of this repo and setup a webapp wich a multiple-select-filter. Se
 * BONUS: store the selected items locally. They should persist after page reload.
 
 ## Primary criteria:
-* HTML/CSS
-* Vanilla JS
+* structured HTML/CSS/Javascript
 * JS architecture (ex. MVC pattern)
 * HTTP/REST
 * ES6 / TypeScript
@@ -29,5 +28,6 @@ Create a clone of this repo and setup a webapp wich a multiple-select-filter. Se
 ## Takeaways:
 * You write well structured code (use common practices / coding patterns)
 * It ok if you do not finish the project. Our goal is to get an insight of your skills. Though it helps if (part of) the code works ;)
+* It's a plus if you write Vanilla JS (rather than using frameworks like Angular, React). Using Vanilla JS, you can prove that you know the inner workings of Javascript and are able to reproduce practices that are used in frameworks.
 * It's a plus if you use Typescript of ES6
-* It's a plus if you do TDD or BDD
+* It's a plus if you use TDD or BDD
