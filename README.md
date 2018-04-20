@@ -27,6 +27,6 @@ Maak een clone van deze repo en zet een webapplicatie op met een multiple-select
 ## Requirements:
 * Gebruik gestructureerde code (common practices/coding patterns)
 * Het product hoeft niet af te zijn, als het maar voldoende inzicht geeft in het technisch niveau. Daarbij helpt het uiteraard wel als een deel van de code functioneert
-* Vanilla JS (dus geen framework als Angular, React) is een pré, maar niet verplicht. Door middel van gebruik van vanilla JS kan je ons laten zien dat je begrijpt hoe Javascript werkt en patterns die in frameworks worden gebruikt kan reproduceren (pré)
-* Liefst zoveel mogelijk Typescript of ES6 (pré)
+* Je kan een framework (React, AngularJs) gebruiken waar je vertrouwd mee bent, maar je kan ons ook laten zien dat je begrijpt hoe Javascript werkt en patterns die in frameworks worden gebruikt kan reproduceren door VanillaJS te gebruiken (pré)
+* Gebruik Typescript of ES6 (pré)
 * Werken met TDD of BDD (pré)
