@@ -1,32 +1,27 @@
-## Opdracht: 
-Maak een clone van deze repo en zet een webapplicatie op met een multiple-select-filter. Zie details hieronder. We willen zien hoe je een webapplicatie opzet en of je weloverwogen technische beslissingen kan maken. 
+# FrontendExercise
 
-## Gegeven:
-* JSON file met inhoud voor multi-select (470 items)
-* Design van multi-select
-* Svg van zoek-icon
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
-## Requirements:
-* Toon de multi-selector met de JSON als opties
-* Maak een zoekfunctie dat frontend filtering doet op de input
-* Meerdere resultaten kunnen tegelijk geselecteerd worden
-* Geselecteerde items komen bovenin de lijst te staan en worden niet gefilterd
-* Bonus: Gebruiker kan door op een knop te klikken de data lokaal opslaan (de data wordt op page refresh opnieuw geladen)
+## Development server
 
-## Belangrijkste challenge punten:
-* gestructureerde HTML/CSS/Javascript
-* JS architectuur (bijvoorbeeld MVC pattern)
-* HTTP/REST
-* ES6 / TypeScript
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Optionele challengepunten:
-* Advanced css (Less/Sass/Responsive/?)
-* Opzetten build street (npm/gulp/webpack/?)
-* Data storage
+## Code scaffolding
 
-## Requirements:
-* Gebruik gestructureerde code (common practices/coding patterns)
-* Het product hoeft niet af te zijn, als het maar voldoende inzicht geeft in het technisch niveau. Daarbij helpt het uiteraard wel als een deel van de code functioneert
-* Je kan een framework (React, AngularJs) gebruiken waar je vertrouwd mee bent, maar je kan ons ook laten zien dat je begrijpt hoe Javascript werkt en patterns die in frameworks worden gebruikt kan reproduceren door VanillaJS te gebruiken (pré)
-* Gebruik Typescript of ES6 (pré)
-* Werken met TDD of BDD (pré)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
