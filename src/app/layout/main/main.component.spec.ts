@@ -1,6 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {MainComponent} from './main.component';
+import {HeaderComponent} from "../header/header.component";
+import {SidebarComponent} from "../sidebar/sidebar.component";
+import {FooterComponent} from "../footer/footer.component";
+import {RouterTestingModule} from "@angular/router/testing";
 
-import { MainComponent } from './main.component';
 
 describe('MainComponent', () => {
   let component: MainComponent;
@@ -8,9 +12,10 @@ describe('MainComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainComponent ]
+      declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent],
+      imports: [RouterTestingModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
