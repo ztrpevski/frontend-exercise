@@ -1,6 +1,9 @@
 {
-  "/services/rest/v1/items": {
-    "target": "http://localhost:3000/data",
-    "changeOrigin": true
+  "/services": {
+    "target": "http://localhost:3000",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/services": ""
+    }
   }
 }
