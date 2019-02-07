@@ -1,3 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
 @import '~bootstrap/scss/bootstrap-reboot';
 @import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/type';
+
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.content-main__container--height {
+  margin: 10px 0;
+  min-height: 400px;
+}
+
+@media screen and (max-width: 800px) {
+  .content-main__container--height {
+    min-height: 100px;
+  }
+
+}
