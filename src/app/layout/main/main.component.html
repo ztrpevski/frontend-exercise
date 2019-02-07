@@ -1,6 +1,8 @@
-<app-header></app-header>
-<app-sidebar></app-sidebar>
-<div class="container-fluid">
-  <router-outlet></router-outlet>
+<app-header class="row"></app-header>
+<div class="row content-main__container--height">
+  <app-sidebar class="col-3"></app-sidebar>
+  <div class="col">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<app-footer></app-footer>
+<app-footer class="row"></app-footer>
