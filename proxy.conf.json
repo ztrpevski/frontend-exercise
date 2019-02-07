@@ -1,0 +1,6 @@
+{
+  "/services/rest/v1/items": {
+    "target": "http://localhost:3000/data",
+    "changeOrigin": true
+  }
+}
