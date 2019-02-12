@@ -11,27 +11,47 @@
   .search-component__title {
     font-size: 1.2em;
   }
-  .search-component__input {
+  .search-component__input--container {
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
-    input {
+    margin-bottom: 20px;
+    .search-component__input {
       border: $box-border;
       -webkit-border-radius: $box-border-radius;
       -moz-border-radius: $box-border-radius;
       border-radius: $box-border-radius;
 
-      margin-left: 5px;
       padding-left: 15px;
       width: 100%;
       height: 35px;
     }
-    svg {
+    .search-component__input--icon {
       position: absolute;
       top: 30%;
       right: 10px;
       z-index: 1;
     }
+  }
+  .search-component__available-options {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    .search-component__available-options--list {
+      margin: 10px 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 
+  .element-margin {
+    margin-bottom: 20px;
   }
 }
+
+
