@@ -48,3 +48,50 @@ body {
     @include transition(all .3s ease);
   }
 }
+
+// input
+.input-square {
+  position: relative;
+  text-align: left;
+
+  label {
+    cursor: pointer;
+    padding: 0 0 0px 25px;
+    &:before,
+    &:after {
+      top: 50%;
+      content: '';
+      position: absolute;
+    }
+    &:before {
+      left: 0;
+      width: 16px;
+      height: 16px;
+      margin: -14px 0 0;
+      background: #FFFFFF;
+      border: $box-border;
+    }
+    &:after {
+      left: 5px;
+      background-color: $button-color-primary;
+      opacity: 0;
+      height: 10px;
+      width: 10px;
+      margin: -10px 0px 0  -1px;
+      @include transition(opacity 0.25s ease);
+    }
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    &:checked + label {
+      &:before {
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
