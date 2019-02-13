@@ -1,12 +1,7 @@
 @import "../../layout/scss/variables";
 
 .search-component {
-  background-color: $box-background-color;
-  border: $box-border;
   padding: 20px;
-  -webkit-border-radius: $box-border-radius;
-  -moz-border-radius: $box-border-radius;
-  border-radius: $box-border-radius;
 
   .search-component__title {
     font-size: 1.2em;
@@ -34,7 +29,7 @@
     }
   }
   .search-component__available-options {
-    height: 200px;
+    height: 230px;
     --scrollbar-size: 6px;
     --scrollbar-color: rgba(0, 0, 0, 0.1);
     --scrollbar-thumb-color: rgba(0, 0, 0, 0.15);

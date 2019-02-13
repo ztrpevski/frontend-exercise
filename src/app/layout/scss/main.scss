@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixin";
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+//layout
+.content-main__container--height {
+  margin: 10px 0;
+  min-height: 400px;
+}
+
+@media screen and (max-width: 800px) {
+  .content-main__container--height {
+    min-height: 100px;
+  }
+}
+
+.container-style {
+  background-color: $box-background-color;
+  border: $box-border;
+  -webkit-border-radius: $box-border-radius;
+  -moz-border-radius: $box-border-radius;
+  border-radius: $box-border-radius;
+}
+
+//buttons
+.button {
+  border: 0;
+  border-radius: $button-border-radius;
+  text-align: center;
+  padding: 8px;
+}
+
+.button-max {
+  width: 100%;
+}
+
+.button-primary {
+  background-color: $button-color-primary;
+  color: $button-text-color-primary;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  &:hover {
+    @include opacity(0.9);
+    @include transition(all .3s ease);
+  }
+}
