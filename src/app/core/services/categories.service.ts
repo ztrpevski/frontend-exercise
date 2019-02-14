@@ -5,7 +5,7 @@ import {HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class CategoriesService {
-  private categoriesUrl = '/services/categories';
+  private categoriesUrl = '/services/items';
 
   constructor(private httpClient: HttpClient) {
   }
