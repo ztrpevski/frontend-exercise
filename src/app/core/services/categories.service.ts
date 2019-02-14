@@ -7,6 +7,7 @@ import {map} from "rxjs/internal/operators";
 @Injectable({
   providedIn: 'root'
 })
+
 export class CategoriesService {
   private categoriesUrl = '/services/items';
   private categories: Categories;

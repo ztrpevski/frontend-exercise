@@ -1,7 +1,8 @@
 <div class="search-component container-style">
   <h3 class="search-component__title element-margin">Productgroep</h3>
   <div class="search-component__input--container element-margin">
-    <input type="search" class="search-component__input" placeholder="Zoek op ..."/>
+    <input type="search" class="search-component__input" [(ngModel)]="filterString" (keyup)="filterCategories()"
+           placeholder="Zoek op ..."/>
     <svg width="14" height="14" class="search-component__input--icon" viewBox="0 0 14 14"
          xmlns="http://www.w3.org/2000/svg">
       <path
@@ -10,14 +11,18 @@
     </svg>
   </div>
 
-  <ng-scrollbar class="search-component__available-options element-margin">
-    <ul class="search-component__available-options--list">
+  <ng-scrollbar class="search-component__available-options element-margin "
+                [ngClass]="{'max-scroll-height': viewCategories?.length > 7}">
+    <ul *ngIf="viewCategories?.length > 0" class="search-component__available-options--list">
       <li class="search-component__available-options--item" *ngFor="let category of viewCategories">
         <div class="input-square">
           <input type="checkbox" name="name-1" id="name-1"/>
           <label for="name-1" [innerHtml]="category"> </label>
         </div>
       </li>
+    </ul>
+    <ul *ngIf="viewCategories?.length === 0" class="search-component__available-options--list">
+      <li class="search-component__available-options--item">sorry... geen resultaten</li>
     </ul>
   </ng-scrollbar>
   <button class="button button-max button-primary">Toepassen</button>

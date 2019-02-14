@@ -2,6 +2,8 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {SearchComponent} from './components/search/search.component';
 import {NgScrollbarModule} from "ngx-scrollbar";
+import {BrowserModule} from "@angular/platform-browser";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -9,7 +11,9 @@ import {NgScrollbarModule} from "ngx-scrollbar";
   ],
   imports: [
     CommonModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    BrowserModule,
+    FormsModule
   ],
   exports: [
     SearchComponent

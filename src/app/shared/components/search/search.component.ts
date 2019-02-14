@@ -14,6 +14,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   public viewCategories: string[];
   private limitResults = 25; //limit showing results
   public categorySubscription: Subscription;
+  public filterString: string;
 
   //maybe the category service should in some parent class,
   // not to make this component too smart
@@ -22,15 +23,23 @@ export class SearchComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.categorySubscription = this.categoryService.getCategories().subscribe(categories => {
+      this.categories = categories;
       this.updateViewCategories(categories);
     });
 
   }
 
+  filterCategories() {
+    const filterString = this.filterString.toLowerCase();
+    const filteredResults = this.categories.data.filter(el => el.toLowerCase().indexOf(filterString) > -1);
+
+    this.updateViewCategories({data: filteredResults});
+  }
+
   // lets limit the DOM what to show
   //a lot of data to the end user will not provide valuable feedback
   updateViewCategories(categories: Categories) {
-    // todo add selected as a limit
+    // todo remove selected as a limit
     this.viewCategories = categories.data.filter((category, index) => index < this.limitResults);
   }
 

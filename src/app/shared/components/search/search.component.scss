@@ -29,7 +29,7 @@
     }
   }
   .search-component__available-options {
-    height: 230px;
+    max-height: 230px;
     --scrollbar-size: 6px;
     --scrollbar-color: rgba(0, 0, 0, 0.1);
     --scrollbar-thumb-color: rgba(0, 0, 0, 0.15);
@@ -48,6 +48,10 @@
         }
       }
     }
+  }
+
+  .max-scroll-height {
+    height: 230px;
   }
 
   .element-margin {
