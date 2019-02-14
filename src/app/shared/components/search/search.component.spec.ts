@@ -1,6 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SearchComponent } from './search.component';
+import {SearchComponent} from './search.component';
+import {FormsModule} from "@angular/forms";
+import {NgScrollbarModule} from "ngx-scrollbar";
+import {SharedModule} from "../../shared.module";
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 describe('SearchComponent', () => {
   let component: SearchComponent;
@@ -8,9 +12,10 @@ describe('SearchComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SearchComponent ]
+      declarations: [SearchComponent],
+      imports: [FormsModule, HttpClientTestingModule, NgScrollbarModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -10,13 +10,12 @@ import {map} from "rxjs/internal/operators";
 
 export class CategoriesService {
   private categoriesUrl = '/services/items';
-  private categories: Categories;
 
   constructor(private httpClient: HttpClient) {
   }
 
   getCategories(): Observable<Categories> {
-    return this.httpClient.get(this.categoriesUrl).pipe(
+    return this.httpClient.get<Categories>(this.categoriesUrl).pipe(
       map(response => response)
     );
   }
