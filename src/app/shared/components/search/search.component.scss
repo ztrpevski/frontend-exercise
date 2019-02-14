@@ -1,4 +1,4 @@
-@import "../../layout/scss/variables";
+@import "../../../layout/scss/variables";
 
 .search-component {
   padding: 25px;
@@ -29,7 +29,6 @@
     }
   }
   .search-component__available-options {
-    height: 230px;
     max-height: 230px;
     --scrollbar-size: 6px;
     --scrollbar-color: rgba(0, 0, 0, 0.1);
