@@ -10,60 +10,12 @@
     </svg>
   </div>
 
-  <ng-scrollbar class="search-component__available-options element-margin" >
+  <ng-scrollbar class="search-component__available-options element-margin">
     <ul class="search-component__available-options--list">
-      <li class="search-component__available-options--item">
+      <li class="search-component__available-options--item" *ngFor="let category of viewCategories">
         <div class="input-square">
-          <input type="checkbox" name="name-1" id="name-1" />
-          <label for="name-1">Example Title</label>
-        </div>
-      </li>
-      <li class="search-component__available-options--item">
-        <div class="input-square">
-          <input type="checkbox" name="name-2" id="name-2" />
-          <label for="name-2">Example Title</label>
-        </div>
-      </li>
-
-      <li class="search-component__available-options--item">
-        <div class="input-square">
-          <input type="checkbox" name="name-17" id="name-17" />
-          <label for="name-17">Example Title</label>
-        </div>
-      </li>
-
-      <li class="search-component__available-options--item">
-        <div class="input-square">
-          <input type="checkbox" name="name-16" id="name-16" />
-          <label for="name-16">Example Title</label>
-        </div>
-      </li>
-
-      <li class="search-component__available-options--item">
-        <div class="input-square">
-          <input type="checkbox" name="name-15" id="name-15" />
-          <label for="name-15">Example Title</label>
-        </div>
-      </li>
-
-      <li class="search-component__available-options--item">
-        <div class="input-square">
-          <input type="checkbox" name="name-14" id="name-14" />
-          <label for="name-14">Example Title</label>
-        </div>
-      </li>
-
-      <li class="search-component__available-options--item">
-        <div class="input-square">
-          <input type="checkbox" name="name-13" id="name-13" />
-          <label for="name-13">Example Title</label>
-        </div>
-      </li>
-
-      <li class="search-component__available-options--item">
-        <div class="input-square">
-          <input type="checkbox" name="name-12" id="name-12" />
-          <label for="name-12">Example Title</label>
+          <input type="checkbox" name="name-1" id="name-1"/>
+          <label for="name-1" [innerHtml]="category"> </label>
         </div>
       </li>
     </ul>

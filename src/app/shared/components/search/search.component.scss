@@ -4,7 +4,7 @@
   padding: 25px;
 
   .search-component__title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .search-component__input--container {
     vertical-align: middle;
@@ -29,18 +29,19 @@
     }
   }
   .search-component__available-options {
-    max-height: 230px;
+    height: 230px;
     --scrollbar-size: 6px;
     --scrollbar-color: rgba(0, 0, 0, 0.1);
     --scrollbar-thumb-color: rgba(0, 0, 0, 0.15);
     --scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.18);
+    font-size: 0.9rem;
 
     .search-component__available-options--list {
       padding: 0;
       list-style: none;
 
       .search-component__available-options--item {
-        margin: 10px 0;
+        margin: 5px 0;
         display: block;
         &:last-child {
           margin-bottom: 0;
@@ -50,7 +51,7 @@
   }
 
   .element-margin {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
