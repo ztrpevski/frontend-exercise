@@ -34,7 +34,12 @@ export class SearchComponent implements OnInit, OnDestroy {
       this.categorySubscription = this.categoryService.getCategories().subscribe(categories => {
         this.categories = categories;
         this.filterOutSelectedCategories();
-        this.updateViewCategories(this.categories);
+        if (this.filterString) {
+          this.filterCategories();
+        } else {
+          this.updateViewCategories(this.categories);
+        }
+
       });
     });
   }
@@ -57,7 +62,6 @@ export class SearchComponent implements OnInit, OnDestroy {
   // lets limit the DOM what to show
   //a lot of data to the end user will not provide valuable feedback
   updateViewCategories(categories: Categories) {
-    // todo remove selected as a limit
     this.viewCategories = [
       ...this.selectedCategories,
       ...categories.data.filter((category, index) => index < this.limitResults)
@@ -65,6 +69,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   }
 
   changeStatus(category) {
+    //todo check if the category actualy exists
     if (this.isSelectedCategory(category)) {
       this.selectedCategories.pop(category);
     } else {
