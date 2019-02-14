@@ -4,6 +4,8 @@ import {HeaderComponent} from "../header/header.component";
 import {SidebarComponent} from "../sidebar/sidebar.component";
 import {FooterComponent} from "../footer/footer.component";
 import {RouterTestingModule} from "@angular/router/testing";
+import {SharedModule} from "../../shared/shared.module";
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 
 describe('MainComponent', () => {
@@ -13,7 +15,7 @@ describe('MainComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent],
-      imports: [RouterTestingModule]
+      imports: [RouterTestingModule, SharedModule, HttpClientTestingModule]
     })
       .compileComponents();
   }));

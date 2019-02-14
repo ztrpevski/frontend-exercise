@@ -1,23 +1,25 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
-import {SidebarComponent} from './sidebar.component';
-import {SharedModule} from "../../shared/shared.module";
+
+import {SearchComponent} from './search.component';
+import {FormsModule} from "@angular/forms";
 import {NgScrollbarModule} from "ngx-scrollbar";
+import {SharedModule} from "../../shared.module";
 import {HttpClientTestingModule} from "@angular/common/http/testing";
 
-describe('SidebarComponent', () => {
-  let component: SidebarComponent;
-  let fixture: ComponentFixture<SidebarComponent>;
+describe('SearchComponent', () => {
+  let component: SearchComponent;
+  let fixture: ComponentFixture<SearchComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [SidebarComponent],
-      imports: [SharedModule, HttpClientTestingModule]
+      declarations: [SearchComponent],
+      imports: [FormsModule, HttpClientTestingModule, NgScrollbarModule]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SidebarComponent);
+    fixture = TestBed.createComponent(SearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -25,4 +27,6 @@ describe('SidebarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
 });

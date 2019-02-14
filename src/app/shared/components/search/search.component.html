@@ -1,0 +1,31 @@
+<div class="search-component container-style">
+  <h3 class="search-component__title element-margin">Productgroep</h3>
+  <div class="search-component__input--container element-margin">
+    <input type="search" class="search-component__input" [(ngModel)]="filterString" (keyup)="filterCategories()"
+           placeholder="Zoek op ..."/>
+    <svg width="14" height="14" class="search-component__input--icon" viewBox="0 0 14 14"
+         xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M13.8 12.2l-3.9-4c.6-.8 1.1-2 1.1-3.1 0-2.8-2.3-5-5-5-2.8 0-5 2.3-5 5 0 2.8 2.2 5 5 5 .8 0 1.7-.2 2.3-.5l3.9 4.3c.2.2.6.2.8 0l.8-.8c.3-.3.3-.7 0-.9zM6 8.1c-1.7 0-3-1.4-3-3 0-1.7 1.4-3 3-3s3 1.4 3 3-1.4 3-3 3z"
+        fill-rule="evenodd"/>
+    </svg>
+  </div>
+
+  <ng-scrollbar class="search-component__available-options element-margin "
+                [ngClass]="{'max-scroll-height': viewCategories?.length > 7}">
+    <ul *ngIf="viewCategories?.length > 0" class="search-component__available-options--list">
+      <li class="search-component__available-options--item" *ngFor="let category of viewCategories; let index = index;">
+        <div class="input-square">
+          <input (change)="changeStatus(category)" [checked]="isSelectedCategory(category)" type="checkbox"
+                 name="category-{{index}}"
+                 id="category-{{index}}"/>
+          <label for="category-{{index}}" [innerHtml]="category"> </label>
+        </div>
+      </li>
+    </ul>
+    <ul *ngIf="viewCategories?.length === 0" class="search-component__available-options--list">
+      <li class="search-component__available-options--item">sorry... geen resultaten</li>
+    </ul>
+  </ng-scrollbar>
+  <button class="button button-max button-primary">Toepassen</button>
+</div>

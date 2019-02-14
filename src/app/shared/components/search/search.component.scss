@@ -1,0 +1,61 @@
+@import "../../../layout/scss/variables";
+
+.search-component {
+  padding: 25px;
+
+  .search-component__title {
+    font-size: 1rem;
+  }
+  .search-component__input--container {
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+
+    .search-component__input {
+      border: $box-border;
+      -webkit-border-radius: $box-border-radius;
+      -moz-border-radius: $box-border-radius;
+      border-radius: $box-border-radius;
+
+      padding-left: 15px;
+      width: 100%;
+      height: 35px;
+    }
+    .search-component__input--icon {
+      position: absolute;
+      top: 30%;
+      right: 10px;
+      z-index: 1;
+    }
+  }
+  .search-component__available-options {
+    max-height: 235px;
+    --scrollbar-size: 6px;
+    --scrollbar-color: rgba(0, 0, 0, 0.1);
+    --scrollbar-thumb-color: rgba(0, 0, 0, 0.15);
+    --scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.18);
+    font-size: 0.9rem;
+
+    .search-component__available-options--list {
+      padding: 0;
+      list-style: none;
+
+      .search-component__available-options--item {
+        margin: 5px 0;
+        display: block;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .max-scroll-height {
+    height: 235px;
+  }
+
+  .element-margin {
+    margin-bottom: 15px;
+  }
+}
+

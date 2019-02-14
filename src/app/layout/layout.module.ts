@@ -5,12 +5,14 @@ import {AppRoutingModule} from "../app-routing.module";
 import {HeaderComponent} from './header/header.component';
 import {SidebarComponent} from './sidebar/sidebar.component';
 import {FooterComponent} from './footer/footer.component';
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
   declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   exports: [MainComponent]
 })
