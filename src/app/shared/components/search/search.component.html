@@ -14,10 +14,12 @@
   <ng-scrollbar class="search-component__available-options element-margin "
                 [ngClass]="{'max-scroll-height': viewCategories?.length > 7}">
     <ul *ngIf="viewCategories?.length > 0" class="search-component__available-options--list">
-      <li class="search-component__available-options--item" *ngFor="let category of viewCategories">
+      <li class="search-component__available-options--item" *ngFor="let category of viewCategories; let index = index;">
         <div class="input-square">
-          <input type="checkbox" name="name-1" id="name-1"/>
-          <label for="name-1" [innerHtml]="category"> </label>
+          <input (change)="changeStatus(category)" [checked]="isSelectedCategory(category)" type="checkbox"
+                 name="category-{{index}}"
+                 id="category-{{index}}"/>
+          <label for="category-{{index}}" [innerHtml]="category"> </label>
         </div>
       </li>
     </ul>
