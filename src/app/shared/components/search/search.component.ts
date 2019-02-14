@@ -71,7 +71,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   changeStatus(category) {
     //todo check if the category actualy exists
     if (this.isSelectedCategory(category)) {
-      this.selectedCategories.pop(category);
+      this.selectedCategories = this.selectedCategories.filter(cat => cat !== category);
     } else {
       this.selectedCategories.push(category);
       this.filterOutSelectedCategories();
