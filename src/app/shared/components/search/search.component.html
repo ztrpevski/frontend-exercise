@@ -16,7 +16,7 @@
     <ul *ngIf="viewCategories?.length > 0" class="search-component__available-options--list">
       <li class="search-component__available-options--item" *ngFor="let category of viewCategories; let index = index;">
         <div class="input-square">
-          <input (change)="changeStatus(category)" [checked]="isSelectedCategory(category)" type="checkbox"
+          <input (change)="changeStatus(category)" [checked]="isCategorySelected(category)" type="checkbox"
                  name="category-{{index}}"
                  id="category-{{index}}"/>
           <label for="category-{{index}}" [innerHtml]="category"> </label>

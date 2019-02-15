@@ -30,18 +30,26 @@ export class SearchComponent implements OnInit, OnDestroy {
     //grab if already are selected categories
     this.routeSubscription = this.route.queryParams.subscribe(params => {
       this.selectedCategories = params['categories'] ? params['categories'].split(',') : [];
-      // grab the categories
-      this.categorySubscription = this.categoryService.getCategories().subscribe(categories => {
-        this.categories = categories;
-        this.filterOutSelectedCategories();
-        if (this.filterString) {
-          this.filterCategories();
-        } else {
-          this.updateViewCategories(this.categories);
-        }
+      //check if already categories are fetched
 
-      });
+      if (!this.categories || !this.categories.data) {
+        this.categorySubscription = this.categoryService.getCategories().subscribe(categories => {
+          this.initCategories(categories);
+        });
+      } else {
+        this.initCategories(this.categories);
+      }
     });
+  }
+
+  initCategories(categories) {
+    this.categories = categories;
+    this.filterOutSelectedCategories();
+    if (this.filterString) {
+      this.filterCategories();
+    } else {
+      this.updateViewCategories(this.categories);
+    }
   }
 
   //used for the view
@@ -69,8 +77,9 @@ export class SearchComponent implements OnInit, OnDestroy {
   }
 
   changeStatus(category) {
-    //todo check if the category actualy exists
-    if (this.isSelectedCategory(category)) {
+    //todo check if the category actually exists
+    if (this.isCategorySelected(category)) {
+      this.categories.data.unshift(category);
       this.selectedCategories = this.selectedCategories.filter(cat => cat !== category);
     } else {
       this.selectedCategories.push(category);
@@ -87,7 +96,7 @@ export class SearchComponent implements OnInit, OnDestroy {
       });
   }
 
-  isSelectedCategory(category) {
+  isCategorySelected(category) {
     return this.selectedCategories.indexOf(category) > -1;
   }
 

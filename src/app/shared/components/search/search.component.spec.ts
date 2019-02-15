@@ -30,7 +30,7 @@ describe('SearchComponent', () => {
 
   describe('After the component is initialized', () => {
 
-    
+
   });
 
 });
