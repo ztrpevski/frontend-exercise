@@ -28,7 +28,8 @@ describe('SearchComponent', () => {
   });
 
 
-  describe('After the component is initialized', () => {
+  describe('when there is no parameter selected', () => {
+
 
 
   });

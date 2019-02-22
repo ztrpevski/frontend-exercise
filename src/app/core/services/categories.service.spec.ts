@@ -54,4 +54,6 @@ describe('CategoriesService', () => {
       req.flush(categoriesMock);
     });
   });
+
+  //todo mock data empty test
 });

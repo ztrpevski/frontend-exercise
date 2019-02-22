@@ -14,6 +14,7 @@ export class CategoriesService {
   constructor(private httpClient: HttpClient) {
   }
 
+  //todo error handler
   getCategories(): Observable<Categories> {
     return this.httpClient.get<Categories>(this.categoriesUrl).pipe(
       map(response => response)
